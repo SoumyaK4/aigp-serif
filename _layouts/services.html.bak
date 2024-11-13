@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyClass: "page-services" 
+bodyClass: "page-services"
 ---
 
 <div class="intro">
@@ -27,22 +27,7 @@ bodyClass: "page-services"
           <h2 class="service-title">
             <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
           </h2>
-          {% if service.img %}
-          <img src="{{ service.img }}" style="max-height: 200px;">
-          {% endif %}
-          <br>
-          <em>Date: {{ service.date | date: "%d %b, %Y" }}</em>
-          <br>
-          {{ service.description }}
-          <br>
           <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
-          <span class="is-pulled-bottom-right">
-            {% if service.external_url and service.external_url != "" %}
-            <a href="{{ service.external_url }}" target="_blank">More Information</a>
-            {% else %}
-            <a href="{{ service.url }}">Read More</a>
-            {% endif %}
-          </span>
         </div>
       </div>
     </div>
