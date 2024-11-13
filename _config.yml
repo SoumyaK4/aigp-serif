@@ -48,10 +48,6 @@ sass:
 
 plugins:
   - jekyll-environment-variables
-  - jekyll-admin
-
-jekyll_admin:
-  homepage: "pages"
 
 exclude:
   - Gemfile
