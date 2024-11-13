@@ -5,7 +5,7 @@ backend:
   update: Update {{collection}} “{{slug}}”
   delete: Delete {{collection}} “{{slug}}”
 
-admin_path: "/superuser"
+base_path: "superuser"
 
 media_folder: "images/news"
 public_folder: "/images/news"
