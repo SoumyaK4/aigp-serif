@@ -38,12 +38,20 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      # date: "{{ site.time | date: '%Y-%m-%d' }}" # Automatically set the current date {{ site.time | date: '%Y-%m-%d %H:%M:%S' }}
+      # image: ""  # Set a default image
+      # description: ""  # Set a default description
+      # external_url: ""  # Set a default external URL
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-admin
+
+jekyll_admin:
+  homepage: "pages"
 
 exclude:
   - Gemfile
