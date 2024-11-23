@@ -1,32 +1,27 @@
 [
   {
-    "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
-    "image": "images/social/github.svg"
-  },
-  {
     "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
+    "link": "https://twitter.com/SoumyaK4_",
     "image": "images/social/twitter.svg"
   },
   {
       "name": "Facebook",
-      "link": "https://facebook.com",
+      "link": "https://facebook.com/SoumyaK4",
       "image": "images/social/facebook.svg"
   },
   {
       "name": "Email",
-      "link": "mailto:ekyllserif@example.com ",
+      "link": "mailto:contact@aigp.org.in",
       "image": "images/social/email.svg"
   },
   {
       "name": "Instagram",
-      "link": "https://instagram.com",
+      "link": "https://instagram.com/aigpindia",
       "image": "images/social/instagram.svg"
   },
   {
       "name": "Discord",
-      "link": "https://discord.com",
+      "link": "https://weiqi.soumyak4.in",
       "image": "images/social/discord.svg"
   }
 

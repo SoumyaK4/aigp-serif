@@ -1,13 +1,13 @@
 ---
-title: Jekyll Serif Theme
+title: Association of Indian Go Players
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: Join the AIGP and meet Go players across India!
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# Welcome to the Association of Indian Go Players
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+The AIGP represents the Go playing community in India. We welcome all Go players in India to join us and participate in our events.

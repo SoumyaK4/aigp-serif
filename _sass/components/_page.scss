@@ -1,7 +1,9 @@
 .page {
   display: flex;
+  // align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  text-align: center;
   .wrapper {
     flex: 1 0 0;
   }

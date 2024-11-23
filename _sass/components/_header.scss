@@ -1,6 +1,6 @@
 .header {
   color: $primary;
-  background-color: #ffffff;
+  background-color: $primary;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,4 +24,8 @@
       position: static;
     }
   }
+}
+
+.header {
+  border-bottom: 2px solid $primary-dark;
 }

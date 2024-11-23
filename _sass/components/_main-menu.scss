@@ -15,18 +15,51 @@
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        color: $white;
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
       &.active {
         > a {
-          font-weight: bold;
           text-decoration: none;
           &:hover {
             text-decoration: none;
             transition: all 225ms ease-in 0s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-menu {
+  > ul {
+    > li {
+      > a {
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $white;
+          transition: all 225ms ease-in 0s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+      &.active {
+        > a {
+          &::after {
+            width: 100%;
+          }
+          &:hover::after {
+            width: 100%;
           }
         }
       }

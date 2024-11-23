@@ -1,7 +1,7 @@
 ---
 title: Contact
 layout: default
-bodyClass: "page-contact"
+bodyClass: "page-home"
 ---
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
@@ -9,9 +9,23 @@ bodyClass: "page-contact"
         <div class="col-12 col-md-8">
             <div class="service service-single">
                 <h1 class="title">{{page.title}}</h1>
+                <p>We're always available to help out anyone who has questions. Please feel free to contact us using the methods below</p>
                 {% include call.html show_button=false %}
-                <div class="content mt-4">{{content}}</div>
+                <div class="content mt-4">
+                    {{content}}
+                    <br>
+                    <a href="/about">About Us</a>
+                    {% if page.show_call_box %}
+                    {% include call.html show_button=true %}
+                    {% endif %}
+                </div>
+                {% if page.intro_image %}
+                <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                  <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="/images/illustrations/pointing.svg" />
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
 </div>
+ 

@@ -1,11 +1,11 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-        <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
+        <div class="call-phone"><strong>Phone: </strong> <a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></div>
     {% endif %}
     {% if site.data.contact.email %}
     <div class="call-email"><strong>Email: </strong>
-      <a href="mailto:{{ .site.data.contact.email }}">
+      <a href="mailto:{{ .site.data.contact.email }}" target="_blank">
         {{ site.data.contact.email }}
       </a>
     </div>
@@ -16,4 +16,30 @@
         <a href="{{ site.data.contact.contact_button_link }}" class="button">Contact</a>
       </div>
     {% endif %}
+
 </div>
+
+<form action="https://formspree.io/f/mayajnov" method="POST" class="call-form">
+  <div class="field">
+    <label class="label" for="name">Name</label>
+    <div class="control">
+      <input class="input" type="text" name="name" id="name" required>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label" for="email">Email</label>
+    <div class="control">
+      <input class="input" type="email" name="_replyto" id="email" required>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label" for="message">Message</label>
+    <div class="control">
+      <textarea class="textarea" name="message" id="message" required></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="button is-link">Send</button>
+</form>

@@ -2,26 +2,40 @@ main:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Services"
-    url: "/services/"
+  - name: "Learn"
+    url: "/learn/" 
     weight: 2
-  # - name: "Team"
-  #   url: "/team/"
-  #   weight: 3
-  - name: "About"
-    url: "/about/"
-    weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
+  - name: "Community"
+    url: "/community/"
+    weight: 3    
   - name: "News"
     url: "/news/"
-    weight: 3
+    weight: 4 
+  - name: "Tournament"
+    url: "/tournament/"
+    weight: 5
+  - name: "Contact"
+    url: "/contact/"
+    weight: 6    
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
+  - name: "News(Learn)"
+    url: "/learn/"
+    weight: 2
+  - name: "Community"
+    url: "/community/"
+    weight: 3    
+  - name: "Services(News)"
+    url: "/news/"
+    weight: 4 
+  - name: "Tournament"
+    url: "/tournament/"
+    weight: 5
   - name: "Contact"
     url: "/contact/"
-    weight: 2
+    weight: 6
+
+  
